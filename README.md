@@ -42,6 +42,8 @@ Geographic coordinates provided to the FieldDoc API should be formatted in the o
 
 Retrieve a list of **public** practices. Supports spatial search using territories, bounding boxes, or geographic point coordinates (proximity). When combining parameters, make sure to provide values that are logically consistent for your use case. Redundant or conflicting spatial filters may produce unexpected or empty result sets.
 
+**Important:** In the current release, you must provide at least one of the following parameters to make a successful request: `organization`, `program`, or `territory`.
+
 **Parameters**
 
 | Name | Type| Description |
