@@ -153,8 +153,13 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
 
 ```json
 {
+  "completed_on": "2022-06-30",
   "created_at": "2022-01-01T00:00:00.000000Z",
   "description": "...",
+  "drainage_geometry": {
+    "coordinates": [],
+    "type": "Polygon"
+  },
   "extent": {
     "calculated": {
       "converted": 2.47,
@@ -167,6 +172,7 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
     "type": "Polygon"
   },
   "id": 1,
+  "inspections": [],
   "metrics": {
     "features": [
       {
@@ -182,9 +188,19 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
     "object": "organization"
   },
   "practice_type": {
+    "geometry_type": null,
     "id": 1,
     "name": "Fee acquisition",
-    "object": "practice_type"
+    "object": "practice_type",
+    "unit": {
+      "group": "area", 
+      "object": "unit", 
+      "plural": "acres", 
+      "singular": "acre", 
+      "symbol": "ac", 
+      "type": "unit", 
+      "usage": "1 acre"
+    }
   },
   "program": {
     "id": 1,
