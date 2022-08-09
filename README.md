@@ -180,6 +180,9 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
       }
     ]
   },
+  "model_inputs": {
+    "...": "..."
+  },
   "modified_at": "2022-01-01T00:00:00.000000Z",
   "name": "Yards Creek Phase IV",
   "organization": {
