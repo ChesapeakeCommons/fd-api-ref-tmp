@@ -80,7 +80,14 @@ GET https://api.fielddoc.org/v1/practices?access_token={token}
         ],
         "type": "Point"
       },
+      "modified_at": "2022-09-30T12:00:00Z",
       "name": "Tree Planting",
+      "project": {
+        "id": 1,
+        "name": "2022 Land Acquisitions",
+        "object": "project",
+        "status": "complete"
+      },
       "territories": [
         "Brodhead",
         "Poconos and Kittatinny"
@@ -111,7 +118,14 @@ GET https://api.fielddoc.org/v1/practices?access_token={token}
       },
       "properties": {
         "id": 1,
+        "modified_at": "2022-09-30T12:00:00Z",
         "name": "Tree Planting",
+        "project": {
+          "id": 1,
+          "name": "2022 Land Acquisitions",
+          "object": "project",
+          "status": "complete"
+        },
         "object": "practice",
         "territories": [
           "Brodhead",
@@ -196,12 +210,12 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
     "name": "Fee acquisition",
     "object": "practice_type",
     "unit": {
-      "group": "area", 
-      "object": "unit", 
-      "plural": "acres", 
-      "singular": "acre", 
-      "symbol": "ac", 
-      "type": "unit", 
+      "group": "area",
+      "object": "unit",
+      "plural": "acres",
+      "singular": "acre",
+      "symbol": "ac",
+      "type": "unit",
       "usage": "1 acre"
     }
   },
@@ -209,6 +223,12 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
     "id": 1,
     "name": "Delaware River Watershed Protection Fund - Forestland Capital Grants",
     "object": "program"
+  },
+  "project": {
+    "id": 1,
+    "name": "2022 Land Acquisitions",
+    "object": "project",
+    "status": "complete"
   },
   "territories": [
     {
