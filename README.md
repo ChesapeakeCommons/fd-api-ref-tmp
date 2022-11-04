@@ -56,11 +56,12 @@ Retrieve a list of **public** practices. Supports spatial search using territori
 | `territory` | string | A normalized territory name. Example: Transform "Poconos and Kittatinny" into `poconos_and_kittatinny`. |
 | `bbox` | string | A comma-separated list of bounding box coordinates in the format `minX,minY,maxX,maxY`. Example: `-76.616539,39.269442,-76.58255,39.291366` |
 | `format` | string | Specify a different response format. Currently supports `geojson`, which returns a `FeatureCollection`. |
+| `expand` | string | A comma-separated list of one or more object properties to include in the response. These properties are not included in responses by default. Example: `project` |
 
 **Request**
 
 ```
-GET https://api.fielddoc.org/v1/practices?access_token={token}
+GET https://api.fielddoc.org/v1/practices?access_token={token}&expand=project
 ```
 
 **Standard Response**
