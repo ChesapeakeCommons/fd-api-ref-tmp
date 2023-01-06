@@ -168,6 +168,13 @@ GET https://api.fielddoc.org/v1/practices/1?access_token={token}
 
 ```json
 {
+  "collateral_programs": [
+    {
+      "id": 999,
+      "name": "PA Growing Greener Grant Program",
+      "authority": "Pennsylvania Department of Environmental Protection"
+    }
+  ],
   "completed_on": "2022-06-30",
   "created_at": "2022-01-01T00:00:00.000000Z",
   "description": "...",
